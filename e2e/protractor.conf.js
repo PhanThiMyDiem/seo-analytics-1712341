@@ -17,6 +17,7 @@ exports.config = {
     },
     directConnect: true,
     baseUrl: `https://seo-analytics-1712341.herokuapp.com/`,
+
     framework: 'jasmine',
     jasmineNodeOpts: {
         showColors: true,
