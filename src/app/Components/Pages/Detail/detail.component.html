@@ -1,0 +1,20 @@
+<section class="main-content">
+    <div class="row">
+        <div class="span12">
+            <ul class="thumbnails listing-products">
+                <li class="span3" *ngFor="let prd of arrProducts | paginate: configPage">
+                    <div class="product-box">
+                        <span class="sale_tag"></span>
+                        <a href="/detailPro/{{ prd._id}}"><img style="height: 270px" src="http://server-shop-new.herokuapp.com/upload/{{ prd.image }} "></a><br/>
+                        <a href="/detailPro/{{ prd._id}} " class="title">{{ prd.name }}</a><br/>
+                        <p class="price">{{ prd.price }}</p>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+            <div class="pagination pagination-small pagination-centered ngx-pagination .current">
+                <pagination-controls id="detailp" (pageChange)="pageChanged($event)"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</section>

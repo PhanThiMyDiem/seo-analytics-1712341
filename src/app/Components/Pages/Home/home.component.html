@@ -1,0 +1,63 @@
+<div class="card">
+    <h4 class="title">
+        <span class="pull-left"><span class="text"><span class="line">About <strong>me</strong></span></span>
+        </span>
+        <span class="pull-right">
+<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+</span>
+    </h4>
+    <section class="main-content">
+        <div class="row">
+            <div class="span12">
+                <div class="row">
+                    <div class="span4">
+                        <a href="/assets/images/m2.jpg" class="thumbnail" data-fancybox-group="group1" title="Description 1"><img alt="" src="/assets/images/avt.jpg"></a>
+                    </div>
+                    <div class="span4">
+                        <address>
+                  <h4 class="title"><strong>Full Name: </strong> <span style="font-size: larger; font-weight: normal; padding-left: 70px">PHAN THI MY DIEM</span></h4>
+                  <h4 class="title"><strong>ID Student: </strong><span style="font-size: larger; font-weight: normal; padding-left: 62px">1712341</span></h4>
+                  <h4 class="title"><strong>Date Of Birthday: </strong><span style="font-size: larger; font-weight: normal; padding-left: 10px">20/09/1999</span></h4>
+                  <h4 class="title"><strong>Faculty Of: </strong><span style="font-size: larger; font-weight: normal; padding-left: 63px; display: inline-block">Information System</span></h4>
+                  <h4 class="title"><strong>Year: </strong><span style="font-size: larger; font-weight: normal; padding-left: 115px">2017 - 2021</span></h4>
+                  <h4 class="title"><strong>Hobies: </strong></h4><span style="font-size: larger; font-weight: normal">Read Books, Listen to music, Running, Walking, Take a photos,...</span>
+                </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h4 class="title">
+        <span class="pull-left"><span class="text"><span class="line">HCMUS - 20B01 <strong>E-Commerce</strong></span></span>
+        </span>
+        <span class="pull-right">
+<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+</span>
+    </h4>
+    <table class="table" style="border: solid 1px black">
+        <thead>
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Họ và Tên</th>
+                <th scope="col">MSSV</th>
+                <th scope="col">AddressEmail</th>
+                <th scope="col">EmailSV</th>
+                <th scope="col">IDTeam</th>
+                <!-- <th scope="col">Image</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let member of arrMember">
+                <th scope="row">{{ member.stt }}</th>
+                <td>{{ member.hoten }}</td>
+                <td>{{ member.mssv }}</td>
+                <td>{{ member.Addressmail }}</td>
+                <td>{{ member.EmailSV }}</td>
+                <td>{{ member.IDTeam }}</td>
+                <!-- <td>
+                    <img src="http://server-shop-new.herokuapp.com/member/image/{{ member.image }}" alt="">
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
